@@ -1,0 +1,79 @@
+// VARIABLES
+// Colors
+$orange: #F16718;
+$light-orange: #ff9b62;
+$dark-blue: #162542;
+$gray: #7b8bad;
+$light-gray: #e8eff2;
+$white: #ffffff;
+
+// Typography
+$font-family: 'Barlow', sans-serif;
+
+$h-font-weight: 900;
+
+$h2-font-size: 32px;
+$h2-line-height: 36px;
+
+$h3-font-size: 24px;
+$h3-line-height: 28px;
+
+$p-font-size: 16px;
+$p-line-height: 26px;
+$p-font-weight: medium;
+
+$border-radius-btn: 8px;
+$border-radius-img: 20px;
+
+// Mixins
+@mixin p-styling {
+  color: $gray; 
+  font-size: $p-font-size;
+  font-weight: $p-font-weight;
+  line-height: $p-line-height;
+}
+
+@mixin btn-styling {
+  border: none;
+  border-radius: $border-radius-btn;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@mixin card-img-styling {
+  background: $orange;
+  border-radius: 20px 16px;
+  height: 65px;
+  width: 65px;
+}
+
+@mixin card-title-styling {
+  font-size: $h3-font-size;
+  font-weight: $h-font-weight;
+  line-height: $p-line-height;
+  text-transform: uppercase;
+}
+
+// CSS Resets
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, * ::before, * ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-family;
+  min-height: 100vh;
+  min-width: 362px;
+  max-width: 100%;
+}
+
+
+
+
+

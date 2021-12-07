@@ -1,0 +1,125 @@
+// Header Layout
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  margin: 1.4375rem auto;
+  width: 87.2%;
+  max-width: 689px;
+}
+
+//Main Layout
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(9, auto);
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+// Layout/Container for a pair of images
+.two-img-container {
+  display: flex;
+  column-gap: 6.4343164%;
+  height: 193px;
+  position: relative;
+  left: -24px;
+  width: 100%;
+}
+
+//Footer Layout 
+.footer {
+  margin: 0 auto 3.125rem;
+}
+
+// Tablet - Layout CSS
+@media only screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    margin: 55px auto 83px;
+    width: 89.7135417%;
+    max-width: 1440px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(425px, auto)  minmax(406px, auto) minmax(166px, auto)  minmax(763px,auto) repeat(1, auto);
+    grid-column-gap: 10px;
+    overflow-x: hidden;
+    width: 89.7135417%;
+    margin: 0 auto;
+  }
+
+  .two-img-container {
+    grid-column: 1/13;
+    display: flex;
+    column-gap: 4.3541364%;
+    height: 320px;
+    margin: 43px auto;
+    position: static;
+  }
+
+  .product-details {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    margin: 113px auto;
+  }
+
+  .footer {
+    margin: 29px auto 3.125rem;
+  }
+}
+
+// Desktop - Layout CSS
+@media only screen and (min-width: 1440px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    margin: 55px auto 83px;
+    width: 79.1666667%;
+    max-width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(480px, auto)  minmax(510px, auto) minmax(599px, auto);
+    grid-column-gap: 30px;
+    overflow-x: hidden;
+    width: 79.1666667%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .two-img-container {
+    grid-column: 1/9;
+    display: flex;
+    column-gap: 4.3541364%;
+    height: 480px;
+    margin: 30px auto;
+    position: static;
+  }
+
+  .product-details {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    margin: 138px auto;
+  }
+
+  .footer {
+    margin: 29px auto 3.125rem;
+  }
+}
+
+
+
+
