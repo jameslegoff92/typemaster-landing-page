@@ -32,19 +32,19 @@
 // Mobile - Call To Action 
 .cta {
   width: 87.2%;
-  max-width: 512px;
+  max-width: 32rem;
 }
 .cta--positioning {
   margin: 4rem auto;
   text-align: left;
 
-  @media only screen and (min-width:512px) {
+  @media only screen and (min-width:32rem) {
     text-align: center;
   }
 }
 
 .cta__title {
-  font-size: 3rem;
+  font-size: $h1-font-size ;
   text-transform: uppercase;
 }
 .cta__title--positioning {
@@ -69,11 +69,11 @@
   margin: 0 0 0 2rem;
 }
 
-// Image Components
+// Mobile - Image Components
 .keyboard {
   background: url(../assets/mobile/image-keyboard.jpg) top left/100% 100% no-repeat;
   border-radius: $border-radius-img;
-  height: 331px;
+  height: 20.6875rem;
   width: 99.2%;
 }
 .keyboard--positioning {
@@ -93,12 +93,12 @@
   width: 58.6%;
 }
 
-// Product Info layout 
+// Mobile - Product Info layout 
 .product-info {
   width: 87.2%;
 }
 .product-info--positioning {
-  margin: 75px auto 111px auto;
+  margin: 4.6875rem auto 6.9375rem auto;
 }
 .product-info__title {
   font-size: $h2-font-size ;
@@ -108,19 +108,19 @@
   width: 68%;
 }
 .product-info__title--positioning {
-  margin: 0 auto 24px auto;
+  margin: 0 auto 1.5rem auto;
 }
 .product-info__text {
   @include p-styling;
   text-align: center;
 }
 
-//Card Component
+//Mobile Card Component
 .card {
   width: 87.2%;
 }
 .card--positioning {
-  margin: 0 auto 64px auto;
+  margin: 0 auto 4rem auto;
 }
 .card__img {
  @include card-img-styling;
@@ -131,23 +131,23 @@
   transform: translateX(-50%);
 }
 .computer-padding {
-  padding: 22px 18px;
+  padding: 1.375rem 1.125rem;
 }
 .bluetooth-padding {
-  padding: 18px 20px;
+  padding: 1.125rem 1.25rem;
 }
 .battery-padding {
-  padding: 22px 16px;
+  padding: 1.375rem 1rem;
 }
 .bulb-padding {
-  padding: 16px 16px;
+  padding: 1rem 1rem;
 }
 
 .card__title {
   @include card-title-styling;
 }
 .card__title--positioning {
-  margin: 48px auto 24px auto;
+  margin: 3rem auto 1.5rem auto;
   text-align: center;
 }
 
@@ -156,7 +156,7 @@
   text-align: center;
 }
 
-// Footer component
+// Mobile - Footer component
 .footer__text {
   @include p-styling;
   text-align: center;
@@ -166,13 +166,8 @@
   }
 }
 
-// Design Components
-.box {
-  display: none;
-}
-
 // Tablet CSS
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48rem) {
   // Tablet - Call To Action Component
   .cta {
     width: auto;
@@ -185,15 +180,15 @@
   }
 
   .cta__text--positioning {
-    padding-right: 15px;
+    padding-right: 4.375rem;
   }
 
   // Tablet - Keyboard Img
   .keyboard {
     background: url(../assets/tablet/image-keyboard.jpg) top left/100% 100% no-repeat;
-    height: 425px;
+    height: 26.5625rem;
     width: 62.2395833vw; 
-    max-width: 800px;
+    max-width: 50rem;
     position: absolute;
     right: -99px;
   }
@@ -204,12 +199,12 @@
 
   .phone-keyboard {
     background: url(../assets/tablet/image-phone-and-keyboard.jpg) top left/100% 100% no-repeat $orange;
-    height: 320px;
+    height: 20rem;
   }
   
   .glass-keyboard {
     background: url(../assets/tablet/image-glass-and-keyboard.jpg) top left/100% 100% no-repeat;
-    height: 320px;
+    height: 20rem;
   }
 
   // Tablet - Product Info
@@ -218,10 +213,11 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin: 29px 0;
+    margin: 1.8125rem 0;
     width: 100%;
   }
   .product-info__title {
+    margin: 0 auto 1.5rem 0;
     text-align: left;
     width: 37.0101597%;
   }
@@ -235,14 +231,14 @@
     width: 100%;
   }
   .card--positioning {
-    margin: 0 auto 64px auto;
+    margin: 0 auto 4rem auto;
   }
   .card__img {
     background: $orange;
-    border-radius: 20px 16px;
-    height: 65px;
-    padding: 20px;
-    width: 65px;
+    border-radius: 1.25rem 1rem;
+    height: 4.0625rem;
+    padding: 1.25rem;
+    width: 4.0625rem;
   }
   .card__img--positioning {
     left: 0;
@@ -255,7 +251,7 @@
     text-transform: uppercase;
   }
   .card__title--positioning {
-    margin: 48px auto 24px auto;
+    margin: 3rem auto 1.5rem auto;
     text-align: left;
   }
   .card__text {
@@ -265,12 +261,20 @@
 }
 
 // Desktop - Component CSS
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 90rem) {
   // Desktop - Call To Action Component
   .cta--positioning {
     grid-column: 1/6;
+    margin: 2em;
+  }
+  
+  .cta__title {
+    font-size: calc($h1-font-size * 1.4);
   }
 
+  .cta__text {
+    font-size: calc($p-font-size * 1.2);
+  }
   .cta__text--positioning {
     padding-right: 0;
   }
@@ -278,7 +282,8 @@
   // Desktop - Keyboard Img
   .keyboard {
     background: url(../assets/desktop/image-keyboard.jpg) top left/100% 100% no-repeat;
-    height: 480px;
+    height: 30rem;
+    max-width: 75rem;
   }
   .keyboard--positioning {
     grid-column: 7/13;
@@ -289,32 +294,36 @@
 
   .phone-keyboard {
     background: url(../assets/tablet/image-phone-and-keyboard.jpg) top left/100% 100% no-repeat $orange;
-    height: 480px;
+    height: 30rem;
   }
   
   .glass-keyboard {
     background: url(../assets/tablet/image-glass-and-keyboard.jpg) top left/100% 100% no-repeat;
-    height: 480px;
+    height: 30rem;
   }
 
   // Desktop - Product Info
   .product-info--positioning {
-    grid-column: 10/13;
+    grid-column: 9/13;
     flex-direction: column;
     align-items: none;
     justify-content: center;
     margin: 0;
   }
   .product-info__title {
+    font-size: calc($h2-font-size * 1.2);
+    padding: 0 2.5rem;
     width: auto;
   }
   .product-info__text {
+    font-size: calc($p-font-size * 1.1);
+    padding: 0 2.5rem;
     width: auto;
   }
   
   // Desktop Card Components
   .card {
-    padding-right: 10px;
+    padding-right: 0.625rem;
   }
 
   // Desktop - Design Components
@@ -322,17 +331,17 @@
     display: block;
     background: $light-gray;
     border-radius: $border-radius-img;
-    height: 236px;
-    width: 255px;
+    height: 14.75rem;
+    width: 15.9375rem;
   }
   .box--left {
     position: absolute;
-    left: -120px;
-    top: 942px;
+    left: -7.5rem;
+    top: 58.875rem;
   }
   .box--right {
     position: absolute;
-    right: -120px;
-    top: 185px;
+    right: -7.5rem;
+    top: 11.5625rem;
   }
 }

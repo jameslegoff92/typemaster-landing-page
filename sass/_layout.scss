@@ -5,7 +5,7 @@
   height: 3rem;
   margin: 1.4375rem auto;
   width: 87.2%;
-  max-width: 689px;
+  max-width: 43.0625rem;
 }
 
 //Main Layout
@@ -22,9 +22,9 @@
 .two-img-container {
   display: flex;
   column-gap: 6.4343164%;
-  height: 193px;
+  height: 12.0625rem;
   position: relative;
-  left: -24px;
+  left: -1.5rem;
   width: 100%;
 }
 
@@ -34,21 +34,21 @@
 }
 
 // Tablet - Layout CSS
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48rem) {
   body {
     overflow-x: hidden;
   }
 
   .header {
-    margin: 55px auto 83px;
+    margin: 3.4375rem auto 5.1875rem;
     width: 89.7135417%;
-    max-width: 1440px;
+    max-width: 90rem;
   }
 
   .grid {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: minmax(425px, auto)  minmax(406px, auto) minmax(166px, auto)  minmax(763px,auto) repeat(1, auto);
-    grid-column-gap: 10px;
+    grid-template-rows: minmax(26.5625rem, auto)  minmax(25.375rem, auto) minmax(10.375rem, auto)  minmax(47.6875rem,auto) repeat(1, auto);
+    grid-column-gap: 0.625rem;
     overflow-x: hidden;
     width: 89.7135417%;
     margin: 0 auto;
@@ -58,8 +58,8 @@
     grid-column: 1/13;
     display: flex;
     column-gap: 4.3541364%;
-    height: 320px;
-    margin: 43px auto;
+    height: 20rem;
+    margin: 2.6875rem auto;
     position: static;
   }
 
@@ -67,31 +67,31 @@
     grid-column: 1/13;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    margin: 113px auto;
+    grid-column-gap: 0.625rem;
+    margin: 7.0625rem auto;
   }
 
   .footer {
-    margin: 29px auto 3.125rem;
+    margin: 1.8125rem auto 3.125rem;
   }
 }
 
 // Desktop - Layout CSS
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 90rem) {
   body {
     overflow-x: hidden;
   }
 
   .header {
-    margin: 55px auto 83px;
+    margin: 3.4375rem auto 5.1875rem;
     width: 79.1666667%;
     max-width: 100%;
   }
 
   .grid {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: minmax(480px, auto)  minmax(510px, auto) minmax(599px, auto);
-    grid-column-gap: 30px;
+    grid-template-rows: minmax(30rem, auto)  minmax(31.875rem, auto) minmax(37.4375rem, auto);
+    grid-column-gap: 1.875rem;
     overflow-x: hidden;
     width: 79.1666667%;
     max-width: 100%;
@@ -102,8 +102,8 @@
     grid-column: 1/9;
     display: flex;
     column-gap: 4.3541364%;
-    height: 480px;
-    margin: 30px auto;
+    height: 30rem;
+    margin: 1.875rem auto;
     position: static;
   }
 
@@ -111,12 +111,12 @@
     grid-column: 1/13;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 30px;
-    margin: 138px auto;
+    grid-column-gap: 1.875rem;
+    margin: 8.625rem auto;
   }
 
   .footer {
-    margin: 29px auto 3.125rem;
+    margin: 1.8125rem auto 3.125rem;
   }
 }
 

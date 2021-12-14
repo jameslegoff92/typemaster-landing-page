@@ -12,18 +12,20 @@ $font-family: 'Barlow', sans-serif;
 
 $h-font-weight: 900;
 
-$h2-font-size: 32px;
-$h2-line-height: 36px;
+$h1-font-size: 3rem;
 
-$h3-font-size: 24px;
-$h3-line-height: 28px;
+$h2-font-size: 2rem;
+$h2-line-height: 2.25rem;
 
-$p-font-size: 16px;
-$p-line-height: 26px;
+$h3-font-size: 1.5rem;
+$h3-line-height: 1.75rem;
+
+$p-font-size: 1rem;
+$p-line-height: 1.625rem;
 $p-font-weight: medium;
 
-$border-radius-btn: 8px;
-$border-radius-img: 20px;
+$border-radius-btn: 0.5rem;
+$border-radius-img: 1.25rem;
 
 // Mixins
 @mixin p-styling {
@@ -42,9 +44,9 @@ $border-radius-img: 20px;
 
 @mixin card-img-styling {
   background: $orange;
-  border-radius: 20px 16px;
-  height: 65px;
-  width: 65px;
+  border-radius: 1.25rem 1rem;
+  height: 4.0625rem;
+  width: 4.0625rem;
 }
 
 @mixin card-title-styling {
@@ -57,7 +59,7 @@ $border-radius-img: 20px;
 // CSS Resets
 html {
   box-sizing: border-box;
-  font-size: 100%;
+  font-size: 16px;
 }
 
 *, * ::before, * ::after {
@@ -69,7 +71,7 @@ html {
 body {
   font-family: $font-family;
   min-height: 100vh;
-  min-width: 362px;
+  min-width: 22.625rem;
   max-width: 100%;
 }
 
