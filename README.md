@@ -10,24 +10,19 @@
 ## Built with
 
 - Semantic HTML5 markup
-- BEM Methodology
+- CSS
 - Sass
-- CSS GRID
-- JQuery
 - Mobile-first workflow
 
 ## Objective of this Project
 
-- To become more familiar with the principles of responsive design.
-- To practice form input validation and frontend logic.
-- To practice using the JQuery library in development.
+- To build a landing page for a computer hardware company.
 
 ## What I learned
 
-- The pseudo elements ::after and ::before don't work on the html input element. 
-- The subtle differences between the keyup and keydown events. 
-- The basics of using JQuery to speed up the development process. 
-- How to handle possible edge cases related to user inputs.
+- The basics of responsive design.
+- The basics of semantic html.
+- The basics of the sass preprocessor.
 
 ## Author
 
