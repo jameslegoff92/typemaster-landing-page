@@ -1,11 +1,10 @@
 #  Typemaster pre-launch landing page
 
 ## Table of contents
-- [My process](#my-process)
-- [Built with](#built-with)
-- [Objectives](#objectives)
-- [What I learned](#what-i-learned)
-- [Author](#author)
+*[Built with](#built-with)*  
+*[Objectives](#objectives)*  
+*[What I learned](#what-i-learned)*  
+*[Author](#author)*
 
 ## Built with
 
@@ -14,7 +13,7 @@
 - Sass
 - Mobile-first workflow
 
-## Objective of this Project
+## Objectives
 
 - To build a landing page for a computer hardware company.
 
@@ -22,7 +21,7 @@
 
 - The basics of responsive design.
 - The basics of semantic html.
-- The basics of the sass preprocessor.
+- The basics of SASS.
 
 ## Author
 
